@@ -1,6 +1,7 @@
 /* COMMON */
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    color: #031c4e;
 }
 
 [class*="col-"] {
@@ -10,45 +11,34 @@ body {
 }
 
 .ms_btn-white {
-    color: blue;
+    color: rgba(0, 140, 255, 0.993);
     background-color: white;
-    border-color: blue;
+    border-color: rgba(0, 140, 255, 0.993);
     margin-top: 8px;
+    font-weight: bold;
 }
 
 .ms_little_text {
     font-size: 12px;
 }
 
-.padding_60 {
-    padding: 60px 0;
-}
-
-
-.ms_skip {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%)
-}
-
-.ms_carousel_container {
-    position: relative;
-}
-
-.ms_carousel_container [class*=".col-"] {
-    position: static;
-}
-
 /* NAVBAR */
 .ms_navbar {
+    position: fixed;
     background-color: white;
     border: none;
+    font-weight: bold;
+    position: relative;
+    min-height: 50px;
 }
 
 .ms_navbar .navbar-brand > img {
     width: 160px;
     margin-top: -6px;
-    margin-left: -12px;
+}
+
+.navbar {
+    padding-bottom: 0;
 }
 
 /* JUMBOTRON */
@@ -64,8 +54,10 @@ body {
 }
 
 #ms_jumbotron h1 {
+    color: #031c4e;
     font-size: 54px;
     line-height: 50px;
+    font-weight: bolder;
 }
 
 .col-md-7 > p {
@@ -80,6 +72,11 @@ body {
     border-radius: 5px;
     background-color: white;
     padding-top: 10px;
+    font-weight: bold;
+}
+
+.ms_window h3 {
+    font-weight: bold;
 }
 
 .ms_window p {
@@ -106,6 +103,11 @@ body {
 
 #sponsors {
     background-color: #F3F5F9;
+    font-weight: bold;
+}
+
+#sponsors p:first-child {
+    color: grey;
 }
 
 #sponsors img {
@@ -122,12 +124,13 @@ body {
 
 /* DEPLOY */
 #deploy li {
+    color: grey;
     text-align: left;
     list-style: none;
     font-size: 16px;
     line-height: 40px;
     padding-left: 5px;
-    border-left: 1px solid black;
+    border-left: 1px solid grey;
 }
 
 #deploy h3 {
@@ -143,6 +146,7 @@ body {
 
 .ms_ul {
     padding-inline-start: 0;
+
 }
 
 .ms_icon {
@@ -152,6 +156,22 @@ body {
 /* FIRST CAROUSEL */
 .ms_carousel {
     background-color: #F3F5F9;
+}
+
+.padding_60 {
+    padding: 60px 0;
+}
+
+.ms_carousel_container {
+    position: relative;
+}
+
+.ms_carousel i {
+    font-size: 60px;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 .ms_blue_circle {
@@ -167,7 +187,9 @@ body {
 }
 
 .ms_screen {
-    width: 100%;
+    
+    display: inline-block;
+    width: 80%;
 }
 
 /* FEATURES */
@@ -230,7 +252,9 @@ body {
 }
 
 #ms_start .btn {
-    color: blue;
+    font-weight: bold;
+    color: #0b70ff
+    ;
 }
 
 /* fix navbar */
@@ -259,4 +283,39 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+}
+
+/* FOOTER */
+
+#credits {
+    background-color: #031c4e;
+    color: rgba(211, 211, 211, 0.753);
+}
+#credits .ms_little_text {
+    color: grey;
+}
+
+#credits i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+#credits ul {
+    list-style: none;
+    padding-top: 20px;
+    padding-inline-start: 0;
+}
+
+#credits li {
+    margin: 6px 0;
+}
+
+#credits a {
+    color: inherit;
+}
+
+#credits ul > li:first-child {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
 }

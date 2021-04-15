@@ -1,7 +1,7 @@
 [class*="col-"] {
     
     /* height: 100px; */
-    background-color: aqua;
+    /* background-color: aqua; */
     border: 1px solid black;
 }
 
@@ -15,12 +15,8 @@
     color: blue;
     background-color: white;
     border-color: blue;
+    margin-top: 8px;
 }
-
-h1 {
-    font-size: 54px
-}
-
 
 /* NAVBAR */
 .ms_navbar {
@@ -30,40 +26,54 @@ h1 {
 }
 
 .ms_navbar .navbar-brand > img {
-    height: 100%;
+    width: 160px;
+    margin-top: -6px;
+    margin-left: -12px;
 }
 
 /* JUMBOTRON */
 #ms_jumbotron {
     background-image: url(../img/bg-banner-home.jpg);
-    /* height: 500px; */
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
 #ms_jumbotron {
-    padding: 20px 0;
+    padding: 40px 0;
+    color: white;
 }
 
-#ms_jumbotron  .row {
-    height: 100%;
-    background-color: crimson;
+#ms_jumbotron h1 {
+    font-size: 54px;
+    line-height: 50px;
+}
+
+.col-md-7 > p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 20px;
 }
 
 .ms_window {
-
+    color: black;
     height: 100%;
     border-radius: 5px;
     background-color: white;
+    padding-top: 10px;
 }
 
-.ms_height_100 {
-    height: 100%;
+.ms_window p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.ms_form-group {
+    padding-bottom: 10px;
 }
 
 .ms_btn-lg {
     font-size: 14px;
-    height: 34px;
+    height: 32px;
     padding: 6px;
 }
 
@@ -72,7 +82,98 @@ h1 {
     float: left;
 }
 
-.ms_window  span {
-    text-align: center;
-    margin-top: 6px;
+/* SPONSORS */
+
+#sponsors {
+    background-color: lightgrey;
+}
+
+#sponsors img {
+    height: 100px;
+    max-width: 90%;
+    text-align: left;
+    background-color: lightgrey;
+}
+
+#sponsors p {
+    margin: 25px 0;
+}
+
+
+/* DEPLOY */
+#deploy li {
+    text-align: left;
+    list-style: none;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 5px;
+    border-left: 1px solid black;
+}
+
+#deploy h3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#deploy p {
+    font-size: 10px;
+}
+
+
+.ms_ul {
+    padding-inline-start: 0;
+}
+
+.ms_icon {
+    width: 35px;
+}
+
+/* FIRST CAROUSEL */
+#carousel {
+    background-color: lightgrey;
+}
+
+.ms_blue_circle {
+    width: 5px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+
+#carousel ul > li:first-child {
+    background-color: blue;
+}
+
+/* FEATURES */
+
+/* REGIONS */
+#regions {
+    color: white;
+    background-image: linear-gradient(blue, darkblue);
+}
+
+#regions span {
+    font-size: 12px;
+}
+
+.ms_border_bot {
+    border-bottom: 1px solid white;
+}
+
+.padding_60 {
+    padding: 60px 0;
+}
+
+/* SECOND CAROUSEL */
+
+.ms_false_image {
+    background-color: white;
+    background-size: contain;
+}
+
+.ms_false_image  img {
+    height: 85px;
+    padding: 30px 0 15px;
 }
